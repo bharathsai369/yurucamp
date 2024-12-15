@@ -39,7 +39,7 @@ body {
 
 @media (max-width: 576px) {
     body {
-        background-position: left;
+        background-position: center;
         background-size: cover;
     }
 }
