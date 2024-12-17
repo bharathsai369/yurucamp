@@ -27,7 +27,7 @@
                     </button>
                     <% } %>
             </div>
-            <div class="card mb-3">
+            <div class="card mb-3 mt-3">
                 <div class="card-body">
                     <h5 class="card-title">
                         <%=campground.title %>
@@ -41,7 +41,7 @@
                         <%=campground.location %>
                     </li>
                     <li class="list-group-item ">
-                        Submitted by <%=campground.author.username %>
+                        Submitted by <%=campground.author.username %>, <%= moment(campground.createdAt).fromNow() %>
                     </li>
                     <li class="list-group-item">$<%=campground.price %>/night</li>
                 </ul>
@@ -54,10 +54,6 @@
                         </form>
                     </div>
                     <% } %>
-                        <div class="card-footer text-muted">
-                            <p>Added: <%= moment(campground.createdAt).fromNow() %>
-                            </p>
-                        </div>
             </div>
         </div>
         <div class="col-12 col-md-6">
