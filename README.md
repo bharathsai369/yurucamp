@@ -46,29 +46,54 @@ Experience the application live at [YuruCamp on Render](https://yurucamp.onrende
 
 ```plaintext
 yurucamp/
+├── cloudinary/
+│   └── index.js                 # Configuration for image uploads
+├── controllers/
+│   ├── campgrounds.js           # Handles logic for campground operations
+│   ├── reviews.js               # Handles logic for review-related actions
+│   └── users.js                 # Handles user authentication and profiles
 ├── models/
-│   ├── campground.js
-│   ├── comment.js
-│   ├── review.js
-│   └── user.js
+│   ├── campground.js            # Schema and model for campgrounds
+│   ├── review.js                # Schema and model for reviews
+│   └── user.js                  # Schema and model for users
+├── public/
+│   ├── javascripts/             # Frontend JavaScript files
+│   └── stylesheets/
+│       ├── app.css              # Custom application styles
 ├── routes/
-│   ├── campgrounds.js
-│   ├── comments.js
-│   ├── index.js
-│   └── reviews.js
+│   ├── campgrounds.js           # Routes for campground features
+│   ├── index.js                 # Main routes and root handlers
+│   ├── reviews.js               # Routes for handling reviews
+│   └── users.js                 # Routes for user management
+├── seeds/
+│   └── index.js                 # Seed script for populating the database
+├── utils/
+│   └── ExpressError.js          # Custom error handling class
 ├── views/
 │   ├── campgrounds/
-│   ├── comments/
+│   │   ├── edit.ejs             # Edit campground page
+│   │   ├── index.ejs            # Campground list page
+│   │   ├── new.ejs              # Form for adding a new campground
+│   │   └── show.ejs             # Detailed campground view
+│   ├── layouts/
+│   │   └── boilerplate.ejs      # Base template for the app
 │   ├── partials/
-│   ├── landing.ejs
-│   ├── login.ejs
-│   └── register.ejs
-├── public/
-│   ├── stylesheets/
-│   └── scripts/
-├── app.js
-├── package.json
-└── README.md
+│   │   ├── flash.ejs            # Flash message notifications
+│   │   ├── footer.ejs           # Footer template
+│   │   ├── header.ejs           # Header template
+│   │   └── navbar.ejs           # Navbar template
+│   ├── users/
+│   │   ├── login.ejs            # Login page
+│   │   └── register.ejs         # Registration page
+│   └── home.ejs                 # Homepage
+├── .gitignore                   # File to ignore specific files/folders in Git
+├── README.md                    # Project description and details
+├── app.js                       # Main server-side entry point
+├── middleware.js                # Middleware functions for error handling and validation
+├── package-lock.json            # Lockfile for npm dependencies
+├── package.json                 # Project dependencies and scripts
+└── schemas.js                   # Validation schemas for input data
+
 ```
 
 ---
