@@ -39,7 +39,8 @@ body {
 
 @media (max-width: 576px) {
     body {
-        background-position: left;
+/*         background-position: left; */
+        background-position: -130px;
         background-size: cover;
     }
 }
