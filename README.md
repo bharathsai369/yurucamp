@@ -1,92 +1,115 @@
-<div align="center">
-  <img width="200" src=""https://res.cloudinary.com/dkkzaekid/image/upload/v1734104794/Shima.Rin.full.3264079_11zon_h7yvi7.jpg"" alt="YelpCamp logo">
+# YuruCamp Project
 
-## 🧭 Folder/File Structure
-```
-|-- README.md
-|-- app.js
-|-- index.test.js
-|-- middleware
-|   `-- index.js
-|-- models
-|   |-- campground.js
-|   |-- comment.js
-|   |-- review.js
-|   `-- user.js
-|-- package-lock.json
-|-- package.json
-|-- public
-|   `-- stylesheets
-|       |-- analytics.js
-|       |-- main.css
-|-- routes
-|   |-- campgrounds.js
-|   |-- comments.js
-|   |-- index.js
-|   `-- reviews.js
-`-- views
-    |-- campgrounds
-    |   |-- edit.ejs
-    |   |-- index.ejs
-    |   |-- new.ejs
-    |   `-- show.ejs
-    |-- comments
-    |   |-- edit.ejs
-    |   `-- new.ejs
-    |-- landing.ejs
-    |-- login.ejs
-    |-- partials
-    |   |-- footer.ejs
-    |   `-- header.ejs
-    |-- register.ejs
-    |-- reviews
-    |   |-- edit.ejs
-    |   |-- index.ejs
-    |   `-- new.ejs
-    `-- users
-        `-- show.ejs
-```
+Welcome to the **YuruCamp Project** repository! This project is a web application inspired by the anime *YuruCamp* (Laid-Back Camp), offering an interactive platform for camping enthusiasts to explore, share, and plan camping experiences.
 
-## 🚀 Getting Started
-### To run this project on your system:
-Create an .env file and add values to the following variables:
-```
-GEOCODER_API_KEY=
-API_KEY=
-DATABASEURL=
-PASSPORT_SECRET=
-```
-Make sure you have [MongoDB](https://docs.mongodb.com/manual/installation/) installed on your system
-In a terminal window, initialize a MongoDB Database 
-```
-$ ./mongod
-```
-In a second terminal window, access the MongoDB Database with Mongoose
-```
-$ mongoose
-```
-In a third terminal window, install dependencies using npm:
+---
 
-```
-$ npm install
-```
-And then run the application with
-```
-$ npm start
-```
-or for hot reloading (recommended)
-```
-$ nodemon app.js
+## 🌟 Features
+
+- **Camping Spots Explorer**: Discover and share detailed information about various camping locations.
+- **User Authentication**: Secure user registration and login functionalities.
+- **Review System**: Users can leave reviews and ratings for camping spots.
+- **Image Uploads**: Upload photos of camping sites to enhance listings.
+- **Responsive Design**: Accessible on both desktop and mobile devices.
+
+---
+
+## 🌐 Live Demo
+
+Experience the application live at [YuruCamp on Render](https://yurucamp.onrender.com).
+
+---
+
+## 🚀 Technologies Used
+
+### **Frontend**:
+- HTML, CSS, JavaScript
+- Templating Engine: EJS (Embedded JavaScript)
+
+### **Backend**:
+- Node.js with Express.js
+- MongoDB (Database for storing user data, camping spots, reviews)
+- Mongoose (Object Data Modeling library for MongoDB)
+
+### **Authentication**:
+- Passport.js (Middleware for authentication)
+
+### **Image Storage**:
+- Cloudinary (Cloud-based image and video management)
+
+### **Deployment**:
+- Render (Hosting platform)
+
+---
+
+## 📂 Folder Structure
+
+```plaintext
+yurucamp/
+├── models/
+│   ├── campground.js
+│   ├── comment.js
+│   ├── review.js
+│   └── user.js
+├── routes/
+│   ├── campgrounds.js
+│   ├── comments.js
+│   ├── index.js
+│   └── reviews.js
+├── views/
+│   ├── campgrounds/
+│   ├── comments/
+│   ├── partials/
+│   ├── landing.ejs
+│   ├── login.ejs
+│   └── register.ejs
+├── public/
+│   ├── stylesheets/
+│   └── scripts/
+├── app.js
+├── package.json
+└── README.md
 ```
 
-## 📐 Tests
-To run the tests:
-```
-$ npm test
-```
+---
 
-## 📣 Acknowledgments
--	The skeleton of this project was based on [Colt Steele's YelpCamp](https://github.com/Colt/yelp-camp-refactored) during the Web Development Bootcamp.
+## ⚡ How to Run Locally
 
-## 🔒 License
-Copyright Notice and Statement: currently not offering any license. Permission only to view and download.
+### Prerequisites
+
+1. Node.js and npm installed.
+2. MongoDB installed locally or access to a cloud instance.
+3. Cloudinary account for image storage.
+
+### Steps
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/bharathsai369/yurucamp.git
+   cd yurucamp
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Set Environment Variables**:
+   Create a `.env` file in the root directory with the following:
+   ```plaintext
+   PORT=3000
+   MONGO_URI=your-mongodb-connection-string
+   CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
+   CLOUDINARY_API_KEY=your-cloudinary-api-key
+   CLOUDINARY_API_SECRET=your-cloudinary-api-secret
+   ```
+
+4. **Run the Application**:
+   ```bash
+   npm start
+   ```
+
+5. **Access the Application**:
+   Open your browser and navigate to `http://localhost:3000`.
+
+---
