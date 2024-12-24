@@ -136,5 +136,6 @@ yurucamp/
 
 5. **Access the Application**:
    Open your browser and navigate to `http://localhost:3000`.
-
 ---
+
+This project, YuruCamp, is a customized adaptation of the YelpCamp project from Colt Steele's Web Development Bootcamp. It includes features and design elements inspired by the original while incorporating my own twists to make it unique.
